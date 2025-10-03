@@ -21,19 +21,19 @@ This confluence of precision (from the Rockies) and passion (from the Deep South
 
 Tech Relay is the IT consulting firm operating under the Bayou Mountain Holdings umbrella. We embody the "Mountain" half of our identity, focusing on a clear, high-level vision and meticulous execution. We specialize in providing strategic, reliable, and secure technology solutions that act as a crucial "relay" point, connecting our clients' business goals with cutting-edge technical execution.
 
-    Our Mission: To be the trusted technology partner that ensures seamless operations, robust security, and scalable infrastructure for businesses looking to gain a competitive edge in a digital world.
+Our Mission: To be the trusted technology partner that ensures seamless operations, robust security, and scalable infrastructure for businesses looking to gain a competitive edge in a digital world.
 
-    The Tech Relay Difference: We bring the stability and foresight of the mountains to every technical challenge. Our team delivers solutions that are not just functional, but fundamentally sound, perfectly tailored, and built for the long haul.
+The Tech Relay Difference: We bring the stability and foresight of the mountains to every technical challenge. Our team delivers solutions that are not just functional, but fundamentally sound, perfectly tailored, and built for the long haul.
 
 2. Mountain Sno (Specialty Food Truck)
 
 Mountain Sno brings the authentic, fluffy sweetness of the Louisiana Sno-Ball to the public. Embodying the "Bayou" spirit, this food truck offers a taste of our wife's heritage from Lafitte, Louisiana, a community where this unique treat is a way of life.
 
-    What is a Louisiana Sno-Ball? This is not a common snow cone. A sno-ball is made with finely shaved, fluffy ice that is light and soft, truly resembling fresh snow. This unique texture allows our vibrant, handcrafted syrups to be fully absorbed, creating a consistently flavorful, melt-in-your-mouth experience from top to bottom.
+What is a Louisiana Sno-Ball? This is not a common snow cone. A sno-ball is made with finely shaved, fluffy ice that is light and soft, truly resembling fresh snow. This unique texture allows our vibrant, handcrafted syrups to be fully absorbed, creating a consistently flavorful, melt-in-your-mouth experience from top to bottom.
 
-    Our Offering: We feature a wide array of classic and inventive flavors, from traditional Nectar and Tiger's Blood to creamy, creative combinations, often topped with Louisiana favorites like sweetened condensed milk (known as a 'stuffed' sno-ball).
+Our Offering: We feature a wide array of classic and inventive flavors, from traditional Nectar and Tiger's Blood to creamy, creative combinations, often topped with Louisiana favorites like sweetened condensed milk (known as a 'stuffed' sno-ball).
 
-    The Mountain Sno Experience: Our food truck is a vibrant celebration of that Louisiana culture—friendly, welcoming, and focused on delivering a simple, perfect moment of icy relief and nostalgic joy.
+The Mountain Sno Experience: Our food truck is a vibrant celebration of that Louisiana culture—friendly, welcoming, and focused on delivering a simple, perfect moment of icy relief and nostalgic joy.
 
 
 ## Leadership and Vision
