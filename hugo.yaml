@@ -1,0 +1,18 @@
+############################
+## CHANGE THESE
+############################
+
+baseURL: 'https://bayoumountain.holdings'
+title: 'Bayou Mountain Holdings'
+
+############################
+## MISC
+############################
+
+enableEmoji: true
+disableKinds: ['taxonomy', 'term']
+languageCode: 'en-us'
+enableRobotsTXT: true
+
+markup:
+  _merge: deep

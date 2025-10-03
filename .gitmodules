@@ -1,0 +1,3 @@
+[submodule "themes/qubt"]
+	path = themes/qubt
+	url = https://github.com/chrede88/qubt.git
