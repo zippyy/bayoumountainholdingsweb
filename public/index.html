@@ -1,0 +1,330 @@
+<!doctype html><html lang="en-us">
+  <head><script src="/qubt/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=qubt/livereload" data-no-instant defer></script>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="Qubt theme for Hugo" />
+
+
+
+<title>Qubt Theme</title>
+<meta name="title" content="Qubt Theme" />
+
+
+
+  <meta name="author" content="Qubt" />
+
+
+
+
+  <meta name="description" content="Demo site build with Qubt &amp; Hugo" />
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/qubt/css/main.bundle.min.2363426c54d710ffe64ec2d958e1d70fedcb64a3b108e81fa59937b95a25b9c4.css" integrity="sha256-I2NCbFTXEP/mTsLZWOHXD&#43;3LZKOxCOgfpZk3uVolucQ=" />
+
+
+
+
+
+
+
+
+
+<script defer src="/qubt/js/main.bundle.min.5a00293bacd8510f50add105212cea76d541a955f6693035ef3128b638a21619.js" integrity="sha256-WgApO6zYUQ9QrdEFISzqdtVBqVX2aTA17zEotjiiFhk="></script>
+
+
+
+
+
+
+
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/qubt/icon_hu_43ce6b80ca9b8187.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/qubt/icon_hu_b7af2359199dfb4.png" />
+
+
+
+<meta property="og:url" content="http://localhost:1313/qubt/">
+  <meta property="og:site_name" content="Qubt Theme">
+  <meta property="og:title" content="Qubt Theme">
+  <meta property="og:description" content="Demo site build with Qubt &amp; Hugo">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/qubt/thumbnail.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/qubt/thumbnail.png">
+  <meta name="twitter:title" content="Qubt Theme">
+  <meta name="twitter:description" content="Demo site build with Qubt &amp; Hugo">
+
+
+<script>
+  
+  if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+  </head>
+  <body class="flex h-screen flex-col justify-between bg-neutral-100 dark:bg-neutral-800">
+    <div>
+      <header class="sticky top-0 z-10 bg-neutral-100 dark:bg-neutral-800">
+        
+
+
+
+<section class="mx-auto flex max-w-(--breakpoint-xl) items-center justify-between p-4">
+  <a href="http://localhost:1313/qubt/" class="flex items-center space-x-3">
+    
+      
+      <img src="/qubt/logo_hu_e5f6802f5a05edc3.webp" class="h-8 w-8" alt="Logo" />
+    
+    <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
+      Qubt Theme
+    </span>
+  </a>
+  <div class="flex flex-row space-x-8">
+    <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+      
+        <a href="/qubt/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Home
+        </a>
+      
+        <a href="/qubt/blog/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Blog
+        </a>
+      
+        <a href="/qubt/about/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          About
+        </a>
+      
+    </nav>
+    <button id="theme-toggle" type="button" class="rounded-lg text-sm text-slate-700 hover:text-indigo-500 dark:text-slate-400" aria-label="theme-switcher">
+      <svg id="theme-toggle-dark-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <svg id="theme-toggle-light-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
+      <div
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded-sm bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded-sm before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded-sm after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 dark:before:bg-slate-400 dark:after:bg-slate-400"></div>
+    </button>
+  </div>
+</section>
+<section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
+  <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+    
+      <a href="/qubt/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Home
+      </a>
+    
+      <a href="/qubt/blog/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Blog
+      </a>
+    
+      <a href="/qubt/about/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        About
+      </a>
+    
+  </nav>
+</section>
+
+      </header>
+      <main>
+        
+  <div class="flex items-center justify-center">
+    <div class="mt-auto flex h-[75vh] flex-col items-center justify-center">
+      
+      
+      
+      
+      
+        
+        <div class="relative w-48">
+          <img class="mb-2 h-48 w-48 rounded-full" width="192" height="192" alt="Qubt" src="/qubt/author_hu_efa0951af539dfd7.webp" />
+          
+            <div class="absolute bottom-4 right-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-solid border-slate-50 bg-neutral-300 dark:bg-neutral-500">
+              👋
+            </div>
+          
+        </div>
+      
+
+
+      <h1 class="text-center text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+        Qubt
+      </h1>
+
+      
+        <h2 class="mt-4 text-center text-xl text-slate-600 dark:text-slate-400">
+          A personal blog theme for Hugo &#x1f332;
+        </h2>
+      
+      <div class="mt-4 flex flex-wrap items-center justify-center">
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/qubt" target="_blank" rel="me noopener noreferrer" aria-label="github">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 496 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-8)">
+        <path d="M165.9,397.4C165.9,399.4 163.6,401 160.7,401C157.4,401.3 155.1,399.7 155.1,397.4C155.1,395.4 157.4,393.8 160.3,393.8C163.3,393.5 165.9,395.1 165.9,397.4ZM134.8,392.9C134.1,394.9 136.1,397.2 139.1,397.8C141.7,398.8 144.7,397.8 145.3,395.8C145.9,393.8 144,391.5 141,390.6C138.4,389.9 135.5,390.9 134.8,392.9ZM179,391.2C176.1,391.9 174.1,393.8 174.4,396.1C174.7,398.1 177.3,399.4 180.3,398.7C183.2,398 185.2,396.1 184.9,394.1C184.6,392.2 181.9,390.9 179,391.2ZM244.8,8C106.1,8 0,113.3 0,252C0,362.9 69.8,457.8 169.5,491.2C182.3,493.5 186.8,485.6 186.8,479.1C186.8,472.9 186.5,438.7 186.5,417.7C186.5,417.7 116.5,432.7 101.8,387.9C101.8,387.9 90.4,358.8 74,351.3C74,351.3 51.1,335.6 75.6,335.9C75.6,335.9 100.5,337.9 114.2,361.7C136.1,400.3 172.8,389.2 187.1,382.6C189.4,366.6 195.9,355.5 203.1,348.9C147.2,342.7 90.8,334.6 90.8,238.4C90.8,210.9 98.4,197.1 114.4,179.5C111.8,173 103.3,146.2 117,111.6C137.9,105.1 186,138.6 186,138.6C206,133 227.5,130.1 248.8,130.1C270.1,130.1 291.6,133 311.6,138.6C311.6,138.6 359.7,105 380.6,111.6C394.3,146.3 385.8,173 383.2,179.5C399.2,197.2 409,211 409,238.4C409,334.9 350.1,342.6 294.2,348.9C303.4,356.8 311.2,371.8 311.2,395.3C311.2,429 310.9,470.7 310.9,478.9C310.9,485.4 315.5,493.3 328.2,491C428.2,457.8 496,362.9 496,252C496,113.3 383.5,8 244.8,8ZM97.2,352.9C95.9,353.9 96.2,356.2 97.9,358.1C99.5,359.7 101.8,360.4 103.1,359.1C104.4,358.1 104.1,355.8 102.4,353.9C100.8,352.3 98.5,351.6 97.2,352.9ZM86.4,344.8C85.7,346.1 86.7,347.7 88.7,348.7C90.3,349.7 92.3,349.4 93,348C93.7,346.7 92.7,345.1 90.7,344.1C88.7,343.5 87.1,343.8 86.4,344.8ZM118.8,380.4C117.2,381.7 117.8,384.7 120.1,386.6C122.4,388.9 125.3,389.2 126.6,387.6C127.9,386.3 127.3,383.3 125.3,381.4C123.1,379.1 120.1,378.8 118.8,380.4ZM107.4,365.7C105.8,366.7 105.8,369.3 107.4,371.6C109,373.9 111.7,374.9 113,373.9C114.6,372.6 114.6,370 113,367.7C111.6,365.4 109,364.4 107.4,365.7Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/qubt" target="_blank" rel="me noopener noreferrer" aria-label="facebook">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 496 493" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-8,-8)">
+        <path d="M504,256C504,119 393,8 256,8C119,8 8,119 8,256C8,379.78 98.69,482.38 217.25,501L217.25,327.69L154.25,327.69L154.25,256L217.25,256L217.25,201.36C217.25,139.21 254.25,104.88 310.92,104.88C338.06,104.88 366.44,109.72 366.44,109.72L366.44,170.72L335.16,170.72C304.36,170.72 294.75,189.84 294.75,209.45L294.75,256L363.53,256L352.53,327.69L294.75,327.69L294.75,501C413.31,482.38 504,379.78 504,256Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/qubt" target="_blank" rel="me noopener noreferrer" aria-label="linkedin">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-17.0199,-31.9208)">
+        <path d="M217.02,31.921C327.403,31.921 417.02,121.538 417.02,231.921C417.02,342.304 327.403,431.921 217.02,431.921C106.637,431.921 17.02,342.304 17.02,231.921C17.02,121.538 106.637,31.921 217.02,31.921ZM141.076,368.418L84.062,368.418L84.062,184.818L141.076,184.818L141.076,368.418ZM354.52,368.418L297.568,368.418L297.568,279.043C297.568,257.742 297.138,230.427 267.926,230.427C238.283,230.427 233.741,253.568 233.741,277.508L233.741,368.418L176.789,368.418L176.789,184.818L231.47,184.818L231.47,209.863L232.268,209.863C239.879,195.438 258.472,180.215 286.212,180.215C343.913,180.215 354.52,218.211 354.52,267.564L354.52,368.418ZM112.538,159.774C94.307,159.774 79.52,144.673 79.52,126.442C79.52,108.329 94.425,93.424 112.538,93.424C130.652,93.424 145.557,108.329 145.557,126.442C145.557,144.673 130.763,159.774 112.538,159.774Z"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/L1nkr" target="_blank" rel="me noopener noreferrer" aria-label="instagram">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-30.84,-28.5794)">
+        <path d="M230.84,28.579C341.223,28.579 430.84,118.196 430.84,228.579C430.84,338.962 341.223,428.579 230.84,428.579C120.457,428.579 30.84,338.962 30.84,228.579C30.84,118.196 120.457,28.579 230.84,28.579ZM367.374,171.892C366.331,149.868 361.3,130.359 345.165,114.285C329.092,98.211 309.582,93.181 287.558,92.076C264.858,90.788 196.822,90.788 174.122,92.076C152.159,93.119 132.65,98.15 116.515,114.224C100.38,130.297 95.411,149.806 94.306,171.831C93.018,194.53 93.018,262.567 94.306,285.267C95.349,307.291 100.38,326.8 116.515,342.874C132.65,358.948 152.098,363.978 174.122,365.083C196.822,366.371 264.858,366.371 287.558,365.083C309.582,364.04 329.092,359.009 345.165,342.874C361.239,326.8 366.269,307.291 367.374,285.267C368.662,262.567 368.662,194.592 367.374,171.892ZM338.049,309.622C333.263,321.647 324,330.911 311.914,335.757C293.815,342.935 250.871,341.279 230.871,341.279C210.871,341.279 167.865,342.874 149.828,335.757C137.803,330.972 128.539,321.708 123.693,309.622C116.515,291.524 118.171,248.579 118.171,228.579C118.171,208.579 116.576,165.573 123.693,147.536C128.478,135.512 137.742,126.248 149.828,121.402C167.926,114.224 210.871,115.88 230.871,115.88C250.871,115.88 293.877,114.285 311.914,121.402C323.938,126.187 333.202,135.451 338.049,147.536C345.227,165.635 343.57,208.579 343.57,228.579C343.57,248.579 345.227,291.586 338.049,309.622ZM230.871,158.089C191.852,158.089 160.38,189.561 160.38,228.579C160.38,267.598 191.852,299.07 230.871,299.07C269.889,299.07 301.362,267.598 301.362,228.579C301.362,189.561 269.889,158.089 230.871,158.089ZM230.871,274.408C205.656,274.408 185.042,253.856 185.042,228.579C185.042,203.303 205.595,182.751 230.871,182.751C256.147,182.751 276.699,203.303 276.699,228.579C276.699,253.856 256.085,274.408 230.871,274.408ZM320.687,155.205C320.687,164.346 313.325,171.647 304.245,171.647C295.104,171.647 287.803,164.285 287.803,155.205C287.803,146.125 295.165,138.763 304.245,138.763C313.325,138.763 320.687,146.125 320.687,155.205Z"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/qubt" target="_blank" rel="me noopener noreferrer" aria-label="email">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-54.3415,-73.3474)">
+        <path d="M254.342,73.347C364.725,73.347 454.342,162.964 454.342,273.347C454.342,383.73 364.725,473.347 254.342,473.347C143.959,473.347 54.342,383.73 54.342,273.347C54.342,162.964 143.959,73.347 254.342,73.347ZM116.842,230.379L116.842,342.097C116.842,361.057 132.257,376.472 151.217,376.472L357.467,376.472C376.426,376.472 391.842,361.057 391.842,342.097L391.842,230.379L274.967,318.035C262.72,327.219 245.963,327.219 233.717,318.035L116.842,230.379ZM142.623,170.222C128.389,170.222 116.842,181.77 116.842,196.004C116.842,204.114 120.655,211.741 127.154,216.629L244.029,304.285C250.152,308.85 258.531,308.85 264.654,304.285L381.529,216.629C388.028,211.741 391.842,204.114 391.842,196.004C391.842,181.77 380.294,170.222 366.06,170.222L142.623,170.222Z"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+          
+            
+            
+            
+            
+              <a class="link" href="https://github.com/chrede88/qubt" target="_blank" rel="me noopener noreferrer" aria-label="website">
+                <span class="link_svg">
+                  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-100.681,-81.3614)">
+        <path d="M300.681,81.361C411.064,81.361 500.681,170.978 500.681,281.361C500.681,391.744 411.064,481.361 300.681,481.361C190.298,481.361 100.681,391.744 100.681,281.361C100.681,170.978 190.298,81.361 300.681,81.361ZM171.431,336.361C166.876,336.361 163.181,340.057 163.181,344.611C163.181,362.83 177.962,377.611 196.181,377.611L405.181,377.611C423.399,377.611 438.181,362.83 438.181,344.611C438.181,340.057 434.485,336.361 429.931,336.361L171.431,336.361ZM218.181,185.111C203.013,185.111 190.681,197.443 190.681,212.611L190.681,322.611L218.181,322.611L218.181,212.611L383.181,212.611L383.181,322.611L410.681,322.611L410.681,212.611C410.681,197.443 398.349,185.111 383.181,185.111L218.181,185.111Z"/>
+    </g>
+</svg>
+
+                </span>
+              </a>
+            
+          
+        
+      </div>
+    </div>
+  </div>
+
+      </main>
+    </div>
+    <footer>
+      <div class="flex flex-col justify-center p-10">
+  
+  <p class="text-center text-slate-700 dark:text-slate-400">
+    
+      &copy;
+      2025
+      Qubt
+    
+  </p>
+
+  
+  
+  
+  
+  <p class="text-center text-sm text-slate-700 dark:text-slate-400">
+    Published with <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://github.com/chrede88/qubt" target="_blank" rel="noopener noreferrer">Qubt</a>
+  </p>
+</div>
+
+    </footer>
+  </body>
+</html>

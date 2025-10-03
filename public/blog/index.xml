@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Qubt Theme</title>
+    <link>http://localhost:1313/qubt/blog/</link>
+    <description>Recent content in Blog on Qubt Theme</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/qubt/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post with Inline Images</title>
+      <link>http://localhost:1313/qubt/blog/post1/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/qubt/blog/post1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    <item>
+      <title>Blog Post With Extra Extra Long Title That Keeps On Going</title>
+      <link>http://localhost:1313/qubt/blog/post2/</link>
+      <pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/qubt/blog/post2/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    <item>
+      <title>Blog Post 3</title>
+      <link>http://localhost:1313/qubt/blog/post3/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/qubt/blog/post3/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    <item>
+      <title>Blog Post 4</title>
+      <link>http://localhost:1313/qubt/blog/post4/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/qubt/blog/post4/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. Integer varius ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere. Nulla pellentesque quam sit amet est posuere, tincidunt auctor ligula bibendum. Donec dapibus lacinia nibh, convallis ultrices enim laoreet et.</description>
+    </item>
+  </channel>
+</rss>

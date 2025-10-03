@@ -1,0 +1,339 @@
+<!doctype html><html lang="en-us">
+  <head><script src="/qubt/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=qubt/livereload" data-no-instant defer></script>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="Qubt theme for Hugo" />
+
+
+
+<title>Qubt Theme</title>
+<meta name="title" content="Qubt Theme" />
+
+
+
+  <meta name="author" content="Qubt" />
+
+
+
+
+  <meta name="description" content="Demo site build with Qubt &amp; Hugo" />
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/qubt/css/main.bundle.min.2363426c54d710ffe64ec2d958e1d70fedcb64a3b108e81fa59937b95a25b9c4.css" integrity="sha256-I2NCbFTXEP/mTsLZWOHXD&#43;3LZKOxCOgfpZk3uVolucQ=" />
+
+
+
+
+
+
+
+
+
+<script defer src="/qubt/js/main.bundle.min.5a00293bacd8510f50add105212cea76d541a955f6693035ef3128b638a21619.js" integrity="sha256-WgApO6zYUQ9QrdEFISzqdtVBqVX2aTA17zEotjiiFhk="></script>
+
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+
+
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/qubt/icon_hu_43ce6b80ca9b8187.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/qubt/icon_hu_b7af2359199dfb4.png" />
+
+
+
+<meta property="og:url" content="http://localhost:1313/qubt/blog/post1/">
+  <meta property="og:site_name" content="Qubt Theme">
+  <meta property="og:title" content="Blog Post with Inline Images">
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-11-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-24T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/qubt/thumbnail.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/qubt/thumbnail.png">
+  <meta name="twitter:title" content="Blog Post with Inline Images">
+  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+
+
+<script>
+  
+  if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+  </head>
+  <body class="flex h-screen flex-col justify-between bg-neutral-100 dark:bg-neutral-800">
+    <div>
+      <header class="sticky top-0 z-10 bg-neutral-100 dark:bg-neutral-800">
+        
+
+
+
+<section class="mx-auto flex max-w-(--breakpoint-xl) items-center justify-between p-4">
+  <a href="http://localhost:1313/qubt/" class="flex items-center space-x-3">
+    
+      
+      <img src="/qubt/logo_hu_e5f6802f5a05edc3.webp" class="h-8 w-8" alt="Logo" />
+    
+    <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
+      Qubt Theme
+    </span>
+  </a>
+  <div class="flex flex-row space-x-8">
+    <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+      
+        <a href="/qubt/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Home
+        </a>
+      
+        <a href="/qubt/blog/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Blog
+        </a>
+      
+        <a href="/qubt/about/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          About
+        </a>
+      
+    </nav>
+    <button id="theme-toggle" type="button" class="rounded-lg text-sm text-slate-700 hover:text-indigo-500 dark:text-slate-400" aria-label="theme-switcher">
+      <svg id="theme-toggle-dark-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <svg id="theme-toggle-light-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
+      <div
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded-sm bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded-sm before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded-sm after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 dark:before:bg-slate-400 dark:after:bg-slate-400"></div>
+    </button>
+  </div>
+</section>
+<section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
+  <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+    
+      <a href="/qubt/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Home
+      </a>
+    
+      <a href="/qubt/blog/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Blog
+      </a>
+    
+      <a href="/qubt/about/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        About
+      </a>
+    
+  </nav>
+</section>
+
+      </header>
+      <main>
+        
+  
+  
+  
+  
+  
+
+
+  <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
+    <article>
+      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+        Blog Post with Inline Images
+      </h1>
+      <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
+        Blog post subtitle ⚡
+      </h2>
+      <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
+        Nov 24, 2023 - 3 minute read
+      </div>
+
+      
+        
+        <div class="flex flex-col">
+          <img class="mt-4 h-full w-full object-cover" src="/qubt/blog1/photo1_hu_7ff1f813827be1a9.webp" alt="feature image" height="491" width="736" />
+          
+            <span class="mb-4 mt-1 text-center text-sm text-slate-700 dark:text-slate-200">
+              Image caption
+            </span>
+          
+        </div>
+      
+
+      
+        <aside class="mb-8 mt-4 flex flex-col">
+          <h2 class="mb-2 text-2xl text-slate-500 dark:text-slate-400">Table of Content</h2>
+          <div class="text-lg text-slate-700 underline dark:text-slate-200">
+            <nav>
+                <ul class="list-inside list-[upper-roman]">
+                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#markdown-h2-title">Markdown h2 title</a></li>
+                      <ul class="list-inside list-[lower-alpha]">
+                          <li class="ml-4 hover:text-slate-500 dark:hover:text-slate-400"><a href="#markdown-h3-title">markdown h3 title</a></li>
+                      </ul>
+                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#latex-rendering">Latex rendering</a></li>
+                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#markdown-subtitle">Markdown subtitle</a></li>
+                      <ul class="list-inside list-[lower-alpha]">
+                          <li class="ml-4 hover:text-slate-500 dark:hover:text-slate-400"><a href="#markdown-subsubtitle">Markdown subsubtitle</a></li>
+                            <ul class="list-inside list-disc">
+                                <li class="ml-8 hover:text-slate-500 dark:hover:text-slate-400"><a href="#markdown-h4-title">Markdown h4 title</a></li>
+                            </ul>
+                      </ul>
+                    <li class="hover:text-slate-500 dark:hover:text-slate-400"><a href="#code-blocks">Code blocks</a></li>
+                </ul>
+            </nav>
+          </div>
+        </aside>
+      
+
+
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+        <h2 id="markdown-h2-title">Markdown h2 title</h2>
+<p>Use the shortcode <code>figArray</code> to add images to your blog post. Add your images to a subfolder. Call the figArray shortcode using the following syntax:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{&lt; <span style="color:#a6e22e">figArray</span> <span style="color:#a6e22e">subfolder</span>=<span style="color:#e6db74">&#34;&lt;subfoldername&gt;&#34;</span> <span style="color:#a6e22e">figCaption</span>=<span style="color:#e6db74">&#34;Some caption&#34;</span> <span style="color:#a6e22e">numCols</span>=<span style="color:#ae81ff">2</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="markdown-h3-title">markdown h3 title</h3>
+<p>Both &ldquo;figCaption&rdquo; and &ldquo;numCols&rdquo; are optional. The shortcode will try to guess the best number of columns to use for the array of figures if &ldquo;numCols&rdquo; is not passed.
+You will need one subfolder containing images per call to the shortcode. The image files need to be one of the following types: png, jpg, jpeg or webp.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<div class="flex flex-col">
+  <div class="grid-cols-3 grid gap-1">
+    
+      
+      <img src="/qubt/blog/post1/images/photo1_hu_eafc40a7569638f.webp" alt="image" loading="lazy" />
+    
+      
+      <img src="/qubt/blog/post1/images/photo2_hu_1f8043ea34f51d7d.webp" alt="image" loading="lazy" />
+    
+  </div>
+  
+    <span class="-mt-6 mb-4 text-center text-sm text-slate-700 dark:text-slate-200">
+      A nice figure caption 👋
+    </span>
+  
+</div>
+
+<h2 id="latex-rendering">Latex rendering</h2>
+$$
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+$$<h2 id="markdown-subtitle">Markdown subtitle</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. Integer varius ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere &#x26a1;.</p>
+<p><strong>Heading</strong></p>
+<ul>
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ul>
+<h3 id="markdown-subsubtitle">Markdown subsubtitle</h3>
+<p>Cras ligula velit, aliquet ac orci dapibus, molestie ultricies libero. Donec at bibendum est. Phasellus vulputate dapibus quam vel accumsan. Curabitur at felis euismod, lobortis urna id, lobortis dolor. Cras tortor ligula, euismod quis lacus faucibus, condimentum fringilla dolor. Mauris in maximus nisi. Phasellus facilisis lacus quis mi cursus, a ornare mi maximus. Nullam nunc lacus, tincidunt varius risus nec, pellentesque vulputate ligula. Etiam id purus et tortor porta mattis. Donec id sapien nulla. Vivamus at malesuada tellus, id ultricies ante. Maecenas ullamcorper mi massa, at rutrum risus aliquet a. Donec sem tortor, molestie quis ex a, faucibus commodo augue. Morbi convallis sem vel tellus facilisis, et sodales felis consequat. Aliquam ut ante tristique, volutpat lectus vestibulum, egestas sapien.</p>
+<h4 id="markdown-h4-title">Markdown h4 title</h4>
+<p>Donec tellus est, faucibus eget ultricies ac, posuere non augue. Fusce ultrices lectus quis nunc lacinia, non tincidunt lectus ultrices. Morbi sodales nisi at felis luctus, eu convallis tortor commodo. Morbi tristique nibh neque, vel tristique dolor laoreet eget. Phasellus felis erat, mattis at suscipit id, faucibus in dolor. In vitae odio at lectus tincidunt dignissim. Fusce risus nisl, hendrerit a ultricies vitae, porta id sapien. Nam elit nunc, hendrerit ut sem quis, ultrices varius leo. Nullam eget lectus in sapien venenatis iaculis at at turpis. Etiam iaculis magna porttitor augue tempus suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam suscipit nibh leo, in pellentesque urna luctus et. Duis diam ipsum, posuere nec tellus sit amet, dignissim feugiat massa. Etiam ut sollicitudin lorem. Quisque commodo libero non mauris viverra malesuada. Morbi vitae auctor felis.</p>
+<p>Maecenas ac dignissim dolor. Sed vitae nisl vel ante rutrum tincidunt ac et diam. Integer id dignissim quam. Vestibulum quis enim sit amet tellus tincidunt sagittis ut vitae nunc. Sed hendrerit, quam ut fermentum imperdiet, augue purus cursus felis, in ultricies elit mauris in risus. Morbi hendrerit imperdiet vehicula. Etiam porttitor magna eu quam laoreet ullamcorper. Etiam a erat ante. Curabitur pharetra, lacus in porttitor cursus, libero lacus consectetur dui, sit amet auctor tellus magna et enim. Pellentesque tristique molestie fringilla. Vivamus sit amet tincidunt quam. Morbi eu nisi quam. Nunc ultrices vel sem sit amet aliquam.</p>
+<h2 id="code-blocks">Code blocks</h2>
+<p>Let&rsquo;s try to add some code blocks:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">key</span>: <span style="color:#ae81ff">value</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">key1</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bla</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">blabla</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+      </span>
+    </article>
+  </div>
+
+      </main>
+    </div>
+    <footer>
+      <div class="flex flex-col justify-center p-10">
+  
+  <p class="text-center text-slate-700 dark:text-slate-400">
+    
+      &copy;
+      2025
+      Qubt
+    
+  </p>
+
+  
+  
+  
+  
+  <p class="text-center text-sm text-slate-700 dark:text-slate-400">
+    Published with <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://github.com/chrede88/qubt" target="_blank" rel="noopener noreferrer">Qubt</a>
+  </p>
+</div>
+
+    </footer>
+  </body>
+</html>

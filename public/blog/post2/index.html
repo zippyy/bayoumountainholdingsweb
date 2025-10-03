@@ -1,0 +1,230 @@
+<!doctype html><html lang="en-us">
+  <head><script src="/qubt/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=qubt/livereload" data-no-instant defer></script>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="Qubt theme for Hugo" />
+
+
+
+<title>Qubt Theme</title>
+<meta name="title" content="Qubt Theme" />
+
+
+
+  <meta name="author" content="Qubt" />
+
+
+
+
+  <meta name="description" content="Demo site build with Qubt &amp; Hugo" />
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/qubt/css/main.bundle.min.2363426c54d710ffe64ec2d958e1d70fedcb64a3b108e81fa59937b95a25b9c4.css" integrity="sha256-I2NCbFTXEP/mTsLZWOHXD&#43;3LZKOxCOgfpZk3uVolucQ=" />
+
+
+
+
+
+
+
+
+
+<script defer src="/qubt/js/main.bundle.min.5a00293bacd8510f50add105212cea76d541a955f6693035ef3128b638a21619.js" integrity="sha256-WgApO6zYUQ9QrdEFISzqdtVBqVX2aTA17zEotjiiFhk="></script>
+
+
+
+
+
+
+
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/qubt/icon_hu_43ce6b80ca9b8187.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/qubt/icon_hu_b7af2359199dfb4.png" />
+
+
+
+<meta property="og:url" content="http://localhost:1313/qubt/blog/post2/">
+  <meta property="og:site_name" content="Qubt Theme">
+  <meta property="og:title" content="Blog Post With Extra Extra Long Title That Keeps On Going">
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-11-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-23T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/qubt/thumbnail.png">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/qubt/thumbnail.png">
+  <meta name="twitter:title" content="Blog Post With Extra Extra Long Title That Keeps On Going">
+  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+
+
+<script>
+  
+  if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
+
+  </head>
+  <body class="flex h-screen flex-col justify-between bg-neutral-100 dark:bg-neutral-800">
+    <div>
+      <header class="sticky top-0 z-10 bg-neutral-100 dark:bg-neutral-800">
+        
+
+
+
+<section class="mx-auto flex max-w-(--breakpoint-xl) items-center justify-between p-4">
+  <a href="http://localhost:1313/qubt/" class="flex items-center space-x-3">
+    
+      
+      <img src="/qubt/logo_hu_e5f6802f5a05edc3.webp" class="h-8 w-8" alt="Logo" />
+    
+    <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
+      Qubt Theme
+    </span>
+  </a>
+  <div class="flex flex-row space-x-8">
+    <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+      
+        <a href="/qubt/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Home
+        </a>
+      
+        <a href="/qubt/blog/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          Blog
+        </a>
+      
+        <a href="/qubt/about/" class="px-3 py-2 text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+          About
+        </a>
+      
+    </nav>
+    <button id="theme-toggle" type="button" class="rounded-lg text-sm text-slate-700 hover:text-indigo-500 dark:text-slate-400" aria-label="theme-switcher">
+      <svg id="theme-toggle-dark-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <svg id="theme-toggle-light-icon" class="hidden h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
+      <div
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded-sm bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded-sm before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded-sm after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 dark:before:bg-slate-400 dark:after:bg-slate-400"></div>
+    </button>
+  </div>
+</section>
+<section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
+  <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+    
+      <a href="/qubt/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Home
+      </a>
+    
+      <a href="/qubt/blog/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        Blog
+      </a>
+    
+      <a href="/qubt/about/" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 dark:text-slate-400 md:p-0">
+        About
+      </a>
+    
+  </nav>
+</section>
+
+      </header>
+      <main>
+        
+  
+  
+  
+  
+  
+
+
+  <div class="justify-left mx-auto mt-8 flex max-w-(--breakpoint-md) px-4">
+    <article>
+      <h1 class="text-4xl font-extrabold text-slate-700 dark:text-slate-200">
+        Blog Post With Extra Extra Long Title That Keeps On Going
+      </h1>
+      <h2 class="mt-4 text-2xl text-slate-500 dark:text-slate-400">
+        
+      </h2>
+      <div class="mb-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
+        Nov 23, 2023 - 3 minute read
+      </div>
+
+      
+        
+        <div class="flex flex-col">
+          <img class="mt-4 h-full w-full object-cover" src="/qubt/blog2/photo2_hu_ce828864f70d846f.webp" alt="feature image" height="491" width="736" />
+          
+            <span class="mb-4 mt-1 text-center text-sm text-slate-700 dark:text-slate-200">
+              Image caption 🎉
+            </span>
+          
+        </div>
+      
+
+      
+
+
+      <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] dark:text-slate-200 md:prose-pre:max-w-(--breakpoint-md) prose-code:before:hidden prose-code:after:hidden">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id erat enim. Ut cursus magna sed luctus auctor. Sed eu augue dignissim, lobortis ipsum eu, dictum nisi. Integer varius ex maximus quam lobortis accumsan. Morbi mollis vulputate metus, aliquam feugiat arcu porta a. Quisque id justo ultricies, lacinia elit quis, pulvinar odio. Fusce feugiat at velit vitae lobortis. Nulla fringilla metus et sem mattis posuere &#x26a1;.</p>
+<p><strong>Heading</strong></p>
+<ul>
+<li>List item 1</li>
+<li>List item 2</li>
+<li>List item 3</li>
+</ul>
+<p>Nulla pellentesque quam sit amet est posuere, tincidunt auctor ligula bibendum. Donec dapibus lacinia nibh, convallis ultrices enim laoreet et. Duis auctor, lectus nec vehicula suscipit, sapien erat pellentesque augue, pulvinar tempus sapien leo sit amet erat. Proin porta, mauris vitae aliquet consectetur, erat eros maximus turpis, at suscipit nibh urna id leo. Nunc commodo sed diam ut aliquet. Duis eros mi, ullamcorper sit amet ex id, aliquet dignissim libero. Fusce at turpis eget nisl feugiat cursus eget vitae elit. Integer auctor enim vel orci fringilla facilisis. Praesent ac euismod tellus.</p>
+<p>Cras ligula velit, aliquet ac orci dapibus, molestie ultricies libero. Donec at bibendum est. Phasellus vulputate dapibus quam vel accumsan. Curabitur at felis euismod, lobortis urna id, lobortis dolor. Cras tortor ligula, euismod quis lacus faucibus, condimentum fringilla dolor. Mauris in maximus nisi. Phasellus facilisis lacus quis mi cursus, a ornare mi maximus. Nullam nunc lacus, tincidunt varius risus nec, pellentesque vulputate ligula. Etiam id purus et tortor porta mattis. Donec id sapien nulla. Vivamus at malesuada tellus, id ultricies ante. Maecenas ullamcorper mi massa, at rutrum risus aliquet a. Donec sem tortor, molestie quis ex a, faucibus commodo augue. Morbi convallis sem vel tellus facilisis, et sodales felis consequat. Aliquam ut ante tristique, volutpat lectus vestibulum, egestas sapien.</p>
+<p>Donec tellus est, faucibus eget ultricies ac, posuere non augue. Fusce ultrices lectus quis nunc lacinia, non tincidunt lectus ultrices. Morbi sodales nisi at felis luctus, eu convallis tortor commodo. Morbi tristique nibh neque, vel tristique dolor laoreet eget. Phasellus felis erat, mattis at suscipit id, faucibus in dolor. In vitae odio at lectus tincidunt dignissim. Fusce risus nisl, hendrerit a ultricies vitae, porta id sapien. Nam elit nunc, hendrerit ut sem quis, ultrices varius leo. Nullam eget lectus in sapien venenatis iaculis at at turpis. Etiam iaculis magna porttitor augue tempus suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam suscipit nibh leo, in pellentesque urna luctus et. Duis diam ipsum, posuere nec tellus sit amet, dignissim feugiat massa. Etiam ut sollicitudin lorem. Quisque commodo libero non mauris viverra malesuada. Morbi vitae auctor felis.</p>
+<p>Maecenas ac dignissim dolor. Sed vitae nisl vel ante rutrum tincidunt ac et diam. Integer id dignissim quam. Vestibulum quis enim sit amet tellus tincidunt sagittis ut vitae nunc. Sed hendrerit, quam ut fermentum imperdiet, augue purus cursus felis, in ultricies elit mauris in risus. Morbi hendrerit imperdiet vehicula. Etiam porttitor magna eu quam laoreet ullamcorper. Etiam a erat ante. Curabitur pharetra, lacus in porttitor cursus, libero lacus consectetur dui, sit amet auctor tellus magna et enim. Pellentesque tristique molestie fringilla. Vivamus sit amet tincidunt quam. Morbi eu nisi quam. Nunc ultrices vel sem sit amet aliquam.</p>
+
+      </span>
+    </article>
+  </div>
+
+      </main>
+    </div>
+    <footer>
+      <div class="flex flex-col justify-center p-10">
+  
+  <p class="text-center text-slate-700 dark:text-slate-400">
+    
+      &copy;
+      2025
+      Qubt
+    
+  </p>
+
+  
+  
+  
+  
+  <p class="text-center text-sm text-slate-700 dark:text-slate-400">
+    Published with <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-indigo-500 hover:text-indigo-500" href="https://github.com/chrede88/qubt" target="_blank" rel="noopener noreferrer">Qubt</a>
+  </p>
+</div>
+
+    </footer>
+  </body>
+</html>
