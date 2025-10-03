@@ -13,21 +13,21 @@ author:
 ############################
 
 links:
-  - github: https://github.com/chrede88/qubt
+  - github: https://github.com/BayouMountainHoldings
   # - gitlab:
-  - facebook: https://github.com/chrede88/qubt
+  # - facebook: https://github.com/chrede88/qubt
   # - x-twitter:
   # - mastodon:
-  - linkedin: https://github.com/chrede88/qubt
-  - instagram: https://github.com/chrede88/L1nkr
+  # - linkedin: https://github.com/chrede88/qubt
+  # - instagram: https://github.com/chrede88/L1nkr
   # - reddit:
   # - telegram:
   # - whatsapp:
   # - signal:
   # - codepen:
   # - dev:
-  - email: https://github.com/chrede88/qubt
-  - website: https://github.com/chrede88/qubt
+  - email: "mailto:info@bayoumountain.holdings"
+  # - website: 
   # - link:
   # - discord:
   # - orcid:
@@ -71,8 +71,8 @@ links:
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: 'Qubt Theme'
-description: 'Demo site build with Qubt & Hugo'
+title: 'Bayou Mountain Holdings, LLC'
+description: 'A Diverse Holdings Company'
 images:
   - thumbnail.png
 
