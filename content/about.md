@@ -9,6 +9,8 @@ bio: true
 icon: ":coffee:"
 ---
 
+
+
 ## Our Story: The Confluence of Two Worlds
 
 Bayou Mountain Holdings LLC is a vibrant, multi-faceted company built on the union of two distinct American landscapes and cultures. The company's name and its diverse ventures reflect the personal story of its founders: a life rooted in the stability and majesty of the Colorado mountains merging with the rich, cultural tradition of the Louisiana bayou, specifically the historic area of Lafitte.
@@ -17,7 +19,7 @@ This confluence of precision (from the Rockies) and passion (from the Deep South
 
 ## Our Ventures
 
-1. Tech Relay (IT Consulting)
+### 1. Tech Relay (IT Consulting)
 
 Tech Relay is the IT consulting firm operating under the Bayou Mountain Holdings umbrella. We embody the "Mountain" half of our identity, focusing on a clear, high-level vision and meticulous execution. We specialize in providing strategic, reliable, and secure technology solutions that act as a crucial "relay" point, connecting our clients' business goals with cutting-edge technical execution.
 
@@ -25,7 +27,7 @@ Our Mission: To be the trusted technology partner that ensures seamless operatio
 
 The Tech Relay Difference: We bring the stability and foresight of the mountains to every technical challenge. Our team delivers solutions that are not just functional, but fundamentally sound, perfectly tailored, and built for the long haul.
 
-2. Mountain Sno (Specialty Food Truck)
+### 2. Mountain Sno (Specialty Food Truck)
 
 Mountain Sno brings the authentic, fluffy sweetness of the Louisiana Sno-Ball to the public. Embodying the "Bayou" spirit, this food truck offers a taste of our wife's heritage from Lafitte, Louisiana, a community where this unique treat is a way of life.
 
