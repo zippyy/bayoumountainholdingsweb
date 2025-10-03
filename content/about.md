@@ -44,4 +44,4 @@ The Mountain Sno Experience: Our food truck is a vibrant celebration of that Lou
 
 Combining Nicholas's deep professional background in Information Technology with Melissa's deep roots in Lafitte, Louisiana, they lead the company's two ventures. Nicholas guides the strategic growth and technical precision of Tech Relay, while Melissa ensures the authentic flavor and passion behind Mountain Sno. Together, they lead Bayou Mountain Holdings with a commitment to high standards, strategic growth, and community engagement. The success of the company is a testament to the idea that innovation can be both technical and deliciously refreshing.
 
-![About image](blog1/900.jpeg)
+![About image](blog1/900.jpg)
