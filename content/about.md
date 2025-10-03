@@ -13,7 +13,7 @@ icon: ":mount_fuji:"
 
 ## Our Story: The Confluence of Two Worlds
 
-**Bayou Mountain Holdings LLC** is a vibrant, multi-faceted company built on the union of two distinct American landscapes and cultures. The company's name and its diverse ventures reflect the personal story of its founders: a life rooted in the stability and majesty of the Colorado mountains merging with the rich, cultural tradition of the Louisiana bayou, specifically the historic area of Lafitte.
+**Bayou Mountain Holdings, LLC** is a vibrant, multi-faceted company built on the union of two distinct American landscapes and cultures. The company's name and its diverse ventures reflect the personal story of its founders: a life rooted in the stability and majesty of the Colorado mountains merging with the rich, cultural tradition of the Louisiana bayou, specifically the historic area of Lafitte.
 
 This confluence of precision (from the Rockies) and passion (from the Deep South) is the driving philosophy behind our two thriving ventures: the strategic IT consulting firm Tech Relay, and the delightful culinary experience of the Mountain Sno specialty Louisiana snowball food truck. We believe that professional rigor and creative joy can, and should, coexist to deliver exceptional value and memorable experiences.
 
