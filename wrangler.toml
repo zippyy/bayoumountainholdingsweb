@@ -1,17 +1,18 @@
-# --- START of Corrected wrangler.toml ---
+# --- Example wrangler.toml ---
 
-# 1. REQUIRED: Define the project name. This must match your Cloudflare Pages project name.
 name = "bayoumountain" 
-
-# 2. REQUIRED: Tell Pages where the static files are after the build.
 pages_build_output_dir = "public"
 
-# 3. CONFIGURE EMAIL BINDING: The "bindings" are configured differently for Pages Functions.
-# The email binding goes under the top-level [[bindings]] array.
+# Existing Mail Binding
 [[bindings]]
 name = "MAIL_SERVICE"
 type = "email"
-# Replace this email address with the sender address you chose (e.g., forms@your-domain.com)
-value = "forms@bayoumountain.holdings"
+value = "forms@bayoumountain.holdings" # Use your actual sender email
 
-# --- END of Corrected wrangler.toml ---
+# New D1 Binding
+[[d1_databases]]
+binding = "DB" # This is the variable name used in your function code (env.DB)
+database_name = "bmhforms" # Use the exact name from Step 1
+# You do NOT need a database_id for Pages functions configured in wrangler.toml
+
+# --- End example wrangler.toml ---

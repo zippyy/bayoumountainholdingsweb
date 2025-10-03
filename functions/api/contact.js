@@ -1,49 +1,49 @@
-// This function will be accessible at /api/contact
+// /functions/api/contact.js
 
-export async function onRequest({ request, env }) {
-  if (request.method !== 'POST') {
-    return new Response('Method Not Allowed', { status: 405 });
-  }
+export async function onRequest(context) {
+    const { request, env } = context;
 
-  try {
-    const formData = await request.formData();
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
+    try {
+        const formData = await request.formData();
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+        
+        // --- 1. INSERT DATA INTO D1 DATABASE ---
+        if (env.DB) {
+            const timestamp = new Date().toISOString();
+            
+            // Note: The variable name "DB" comes from the [[d1_databases]] binding in wrangler.toml
+            const { error } = await env.DB.prepare(
+                "INSERT INTO contacts (name, email, message, timestamp) VALUES (?, ?, ?, ?)"
+            ).bind(name, email, message, timestamp).run();
 
-    // Basic validation
-    if (!name || !email || !message) {
-      return new Response('Please fill out all required fields.', { status: 400 });
+            if (error) {
+                console.error("D1 Insert Error:", error);
+            }
+        }
+        // --- END D1 INSERT ---
+
+        // --- 2. SEND EMAIL ---
+        if (!env.MAIL_SERVICE) {
+            // This should not happen if wrangler.toml is correct
+            return new Response("Email service binding missing.", { status: 500 });
+        }
+        
+        const info = await env.MAIL_SERVICE.send({
+            to: "your-receiving-email@bayoumountain.holdings", // Use your actual inbox email
+            from: "forms@bayoumountain.holdings", // Must be the bound email from wrangler.toml
+            subject: `New Contact Form Submission from ${name}`,
+            text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+            html: `<strong>Name:</strong> ${name}<br><strong>Email:</strong> ${email}<br><br><strong>Message:</strong><p>${message}</p>`
+        });
+        // --- END EMAIL SEND ---
+
+        // Redirect the user back to the contact page with a success message
+        return Response.redirect("https://bayoumountain.holdings/contact/?status=success", 302);
+
+    } catch (error) {
+        console.error("Function Error:", error);
+        return new Response(`Submission failed: ${error.message}`, { status: 500 });
     }
-
-    // Construct the email to be sent
-    const mailBody = `
-      New Contact Form Submission:
-      ---
-      Name: ${name}
-      Email: ${email}
-      Message:
-      ${message}
-      ---
-    `;
-
-    // Send the email using the Cloudflare Email Binding (env.MAIL_SERVICE)
-    await env.MAIL_SERVICE.send({
-      // 🚨 CRITICAL: This 'from' address MUST be an email on your domain 
-      // configured with Cloudflare Email Routing.
-      from: 'forms@bayoumountain.holdings', 
-      
-      // The 'to' address is where you want to receive the message.
-      to: 'info@bayoumountain.holdings',   
-      
-      subject: `New Contact from ${name}`,
-      content: mailBody,
-    });
-
-    return new Response('Success! Your message has been forwarded.', { status: 200 });
-
-  } catch (error) {
-    console.error('Email sending error:', error);
-    return new Response('Server Error: Failed to process submission.', { status: 500 });
-  }
 }
