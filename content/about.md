@@ -9,15 +9,13 @@ bio: true
 icon: ":coffee:"
 ---
 
-Company Biography: Bayou Mountain Holdings LLC
-
-Our Story: The Confluence of Two Worlds
+## Our Story: The Confluence of Two Worlds
 
 Bayou Mountain Holdings LLC is a vibrant, multi-faceted company built on the union of two distinct American landscapes and cultures. The company's name and its diverse ventures reflect the personal story of its founders: a life rooted in the stability and majesty of the Colorado mountains merging with the rich, cultural tradition of the Louisiana bayou, specifically the historic area of Lafitte.
 
 This confluence of precision (from the Rockies) and passion (from the Deep South) is the driving philosophy behind our two thriving ventures: the strategic IT consulting firm Tech Relay, and the delightful culinary experience of the Mountain Sno specialty Louisiana snowball food truck. We believe that professional rigor and creative joy can, and should, coexist to deliver exceptional value and memorable experiences.
 
-Our Ventures
+## Our Ventures
 
 1. Tech Relay (IT Consulting)
 
@@ -38,7 +36,7 @@ Mountain Sno brings the authentic, fluffy sweetness of the Louisiana Sno-Ball to
     The Mountain Sno Experience: Our food truck is a vibrant celebration of that Louisiana culture—friendly, welcoming, and focused on delivering a simple, perfect moment of icy relief and nostalgic joy.
 
 
-Leadership and Vision
+## Leadership and Vision
 
 Nicholas Bennett, Founder & CEO, and his wife, Melissa Bennett, Co-Owner & Visionary, established Bayou Mountain Holdings LLC with the vision of creating a company as diverse and rich as the American landscape itself.
 
