@@ -1,10 +1,17 @@
-# Configuration for Cloudflare Pages Functions
-# The 'pages_build_output_dir' must point to your Hugo output directory ('public')
+# --- START of Corrected wrangler.toml ---
+
+# 1. REQUIRED: Define the project name. This must match your Cloudflare Pages project name.
+name = "bayoumountain" 
+
+# 2. REQUIRED: Tell Pages where the static files are after the build.
 pages_build_output_dir = "public"
 
-# This section defines the binding for the Email service.
+# 3. CONFIGURE EMAIL BINDING: The "bindings" are configured differently for Pages Functions.
+# The email binding goes under the top-level [[bindings]] array.
 [[bindings]]
 name = "MAIL_SERVICE"
 type = "email"
-# Replace the value below with your actual sender email address on your domain.
+# Replace this email address with the sender address you chose (e.g., forms@your-domain.com)
 value = "forms@bayoumountain.holdings"
+
+# --- END of Corrected wrangler.toml ---
