@@ -37,20 +37,24 @@ The most direct way to reach us is by email. We do our best to respond to all me
 
 ### 📧 Contact Form
 
-<form method="POST" action="/api/contact">
+<div style="padding: 20px; border: 1px solid #ccc; background-color: #f7f7f7;">
 
-<label for="name">Your Name</label>
-<input type="text" id="name" name="name" required>
+<form method="POST" action="/api/contact" id="contact-form">
 
-<label for="email">Your Email</label>
-<input type="email" id="email" name="email" required>
+<label for="name" class="form-label">Your Name</label>
+<input type="text" id="name" name="name" required class="form-input">
 
-<label for="message">Your Message</label>
-<textarea id="message" name="message" rows="5" required></textarea>
+<label for="email" class="form-label">Your Email</label>
+<input type="email" id="email" name="email" required class="form-input">
 
-<button type="submit" id="submitButton">Send Message</button>
+<label for="message" class="form-label">Your Message</label>
+<textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+
+<button type="submit" id="submitButton" class="form-button">Send Message</button>
 
 </form>
+
+</div>
 
 <!-- ### 📍 Other Details -->
 
