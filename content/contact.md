@@ -37,57 +37,18 @@ The most direct way to reach us is by email. We do our best to respond to all me
 
 ### 📧 Contact Form
 
-<form method="POST" action="/api/contact" id="contact-form">
+<form method="POST" action="/api/contact">
 
-    <label for="name" style="display: block; margin-bottom: 5px;">Your Name</label>
-    <input type="text" id="name" name="name" required
-        style="
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            background-color: #f7f7f7; /* Light Gray Background */
-            border: 1px solid #ccc; /* Visible Border */
-            color: #333; /* Dark Text */
-            box-sizing: border-box;
-        ">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" required>
 
-    <label for="email" style="display: block; margin-bottom: 5px;">Your Email</label>
-    <input type="email" id="email" name="email" required
-        style="
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            background-color: #f7f7f7; /* Light Gray Background */
-            border: 1px solid #ccc; /* Visible Border */
-            color: #333; /* Dark Text */
-            box-sizing: border-box;
-        ">
+<label for="email">Your Email</label>
+<input type="email" id="email" name="email" required>
 
-    <label for="message" style="display: block; margin-bottom: 5px;">Your Message</label>
-    <textarea id="message" name="message" rows="5" required
-        style="
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            background-color: #f7f7f7; /* Light Gray Background */
-            border: 1px solid #ccc; /* Visible Border */
-            color: #333; /* Dark Text */
-            box-sizing: border-box;
-        "></textarea>
+<label for="message">Your Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
 
-    <button type="submit" id="submitButton"
-        style="
-            background-color: #333; /* Dark Button Background */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-            font-size: 1em;
-        ">Send Message</button>
+<button type="submit" id="submitButton">Send Message</button>
 
 </form>
 
