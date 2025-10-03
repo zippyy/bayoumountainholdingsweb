@@ -37,24 +37,63 @@ The most direct way to reach us is by email. We do our best to respond to all me
 
 ### 📧 Contact Form
 
-<div style="padding: 20px; border: 1px solid #ccc; background-color: #f7f7f7;">
 
 <form method="POST" action="/api/contact" id="contact-form">
 
-<label for="name" class="form-label">Your Name</label>
-<input type="text" id="name" name="name" required class="form-input">
+    <label for="name" style="display: block; margin-bottom: 5px; color: #333;">Your Name</label>
+    <input type="text" id="name" name="name" required
+        style="
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f7f7f7; /* Light Gray Background */
+            border: 1px solid #ccc; /* Visible Border */
+            color: #333; /* Dark Text */
+            box-sizing: border-box;
+            border-radius: 4px; /* Optional: Slight rounding */
+        ">
 
-<label for="email" class="form-label">Your Email</label>
-<input type="email" id="email" name="email" required class="form-input">
+    <label for="email" style="display: block; margin-bottom: 5px; color: #333;">Your Email</label>
+    <input type="email" id="email" name="email" required
+        style="
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f7f7f7; /* Light Gray Background */
+            border: 1px solid #ccc; /* Visible Border */
+            color: #333; /* Dark Text */
+            box-sizing: border-box;
+            border-radius: 4px;
+        ">
 
-<label for="message" class="form-label">Your Message</label>
-<textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+    <label for="message" style="display: block; margin-bottom: 5px; color: #333;">Your Message</label>
+    <textarea id="message" name="message" rows="5" required
+        style="
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f7f7f7; /* Light Gray Background */
+            border: 1px solid #ccc; /* Visible Border */
+            color: #333; /* Dark Text */
+            box-sizing: border-box;
+            border-radius: 4px;
+        "></textarea>
 
-<button type="submit" id="submitButton" class="form-button">Send Message</button>
+    <button type="submit" id="submitButton"
+        style="
+            background-color: #333; /* Dark Button Background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+        ">Send Message</button>
 
 </form>
-
-</div>
 
 <!-- ### 📍 Other Details -->
 

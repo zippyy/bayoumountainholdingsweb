@@ -16,3 +16,6 @@ enableRobotsTXT: true
 
 markup:
   _merge: deep
+  goldmark:
+     renderer:
+       unsafe: true
