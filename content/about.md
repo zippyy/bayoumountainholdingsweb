@@ -6,7 +6,7 @@ type: misc
 jobTitle: A Diverse Holdings Company
 name: Bayou Mountain Holdings, LLC
 bio: true
-icon: ":coffee:"
+icon: ":mount_fuji:"
 ---
 
 
