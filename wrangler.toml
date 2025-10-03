@@ -1,0 +1,10 @@
+# Configuration for Cloudflare Pages Functions
+# The 'pages_build_output_dir' must point to your Hugo output directory ('public')
+pages_build_output_dir = "public"
+
+# This section defines the binding for the Email service.
+[[bindings]]
+name = "MAIL_SERVICE"
+type = "email"
+# Replace the value below with your actual sender email address on your domain.
+value = "forms@bayoumountain.holdings"
