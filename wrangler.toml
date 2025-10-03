@@ -9,10 +9,10 @@ name = "MAIL_SERVICE"
 type = "email"
 value = "forms@bayoumountain.holdings" # Use your actual sender email
 
-# New D1 Binding
+# New D1 Binding - Must include the database_id
 [[d1_databases]]
-binding = "DB" # This is the variable name used in your function code (env.DB)
-database_name = "bmhforms" # Use the exact name from Step 1
-# You do NOT need a database_id for Pages functions configured in wrangler.toml
+binding = "DB" # The variable name used in your function (env.DB)
+database_name = "bmhforms" # The name you chose
+database_id = "cb9d6ef7-7545-4142-9c12-3802df59055d" 
 
 # --- End example wrangler.toml ---
