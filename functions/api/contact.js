@@ -1,4 +1,5 @@
 // /functions/api/contact.js
+// This function only handles D1 Database logging from the contact form.
 
 export async function onRequest(context) {
     const { request, env } = context;
@@ -9,11 +10,12 @@ export async function onRequest(context) {
         const email = formData.get('email');
         const message = formData.get('message');
         
-        // --- 1. INSERT DATA INTO D1 DATABASE ---
+        // --- 1. D1 DATABASE INSERT (Logging the entry) ---
+        // Checks if the DB binding (named 'DB') is available in the environment
         if (env.DB) {
             const timestamp = new Date().toISOString();
             
-            // Note: The variable name "DB" comes from the [[d1_databases]] binding in wrangler.toml
+            // Inserts form data into the 'contacts' table
             const { error } = await env.DB.prepare(
                 "INSERT INTO contacts (name, email, message, timestamp) VALUES (?, ?, ?, ?)"
             ).bind(name, email, message, timestamp).run();
@@ -21,29 +23,17 @@ export async function onRequest(context) {
             if (error) {
                 console.error("D1 Insert Error:", error);
             }
-        }
-        // --- END D1 INSERT ---
-
-        // --- 2. SEND EMAIL ---
-        if (!env.MAIL_SERVICE) {
-            // This should not happen if wrangler.toml is correct
-            return new Response("Email service binding missing.", { status: 500 });
+        } else {
+            console.error("D1 binding (env.DB) is missing!");
         }
         
-        const info = await env.MAIL_SERVICE.send({
-            to: "your-receiving-email@bayoumountain.holdings", // Use your actual inbox email
-            from: "forms@bayoumountain.holdings", // Must be the bound email from wrangler.toml
-            subject: `New Contact Form Submission from ${name}`,
-            text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-            html: `<strong>Name:</strong> ${name}<br><strong>Email:</strong> ${email}<br><br><strong>Message:</strong><p>${message}</p>`
-        });
-        // --- END EMAIL SEND ---
-
-        // Redirect the user back to the contact page with a success message
+        // --- 2. REDIRECT ---
+        // Redirects the user back to the contact page after submission
         return Response.redirect("https://bayoumountain.holdings/contact/?status=success", 302);
 
     } catch (error) {
         console.error("Function Error:", error);
+        // If anything fails during parsing or D1 insertion, show an error.
         return new Response(`Submission failed: ${error.message}`, { status: 500 });
     }
 }
