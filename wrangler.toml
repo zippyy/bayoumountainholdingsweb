@@ -1,28 +1,18 @@
+# --- FINAL, WORKING wrangler.toml STRUCTURE ---
+
 name = "bayoumountain" 
 pages_build_output_dir = "public"
 
-# --- D1 Database Definition (Top-Level) ---
-# This is where the database ID is defined.
+# D1 Database Definition (Top-Level)
 [[d1_databases]]
 binding = "DB"
 database_name = "bmhforms"
 database_id = "cb9d6ef7-7545-4142-9c12-3802df59055d" 
 
-# --- Pages Functions Environment Bindings (Nested) ---
-# This section applies the bindings to the deployed function.
+# Pages Functions Configuration Block
 [pages_functions]
-# Defines the development environment (usually "production" for the main branch)
-[pages_functions.environment]
-name = "production"
-
-    # Worker Bindings Array - This is where your D1 and Mail bindings go.
-    [[pages_functions.environment.bindings]]
+    # Bindings Array - This is the array that applies bindings to your function.
+    [[pages_functions.bindings]]
     name = "MAIL_SERVICE"
     type = "email"
     value = "forms@bayoumountain.holdings"
-
-    [[pages_functions.environment.bindings]]
-    name = "DB"
-    type = "d1"
-    # This must match the database_name defined in the top-level [[d1_databases]] section
-    database_name = "bmhforms"
