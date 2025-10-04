@@ -1,5 +1,5 @@
 // /functions/api/contact.js
-// This function only handles D1 Database logging from the contact form.
+// This function logs to D1 and then redirects the user back to the home page (/).
 
 export async function onRequest(context) {
     const { request, env } = context;
@@ -10,8 +10,7 @@ export async function onRequest(context) {
         const email = formData.get('email');
         const message = formData.get('message');
         
-        // --- 1. D1 DATABASE INSERT (Logging the entry) ---
-        // Checks if the DB binding (named 'DB') is available in the environment
+        // --- D1 DATABASE INSERT (Logging the entry) ---
         if (env.DB) {
             const timestamp = new Date().toISOString();
             
@@ -27,13 +26,13 @@ export async function onRequest(context) {
             console.error("D1 binding (env.DB) is missing!");
         }
         
-        // --- 2. REDIRECT ---
-        // Redirects the user back to the contact page after submission
-        return Response.redirect("https://bayoumountain.holdings/contact/?status=success", 302);
+        // --- REDIRECT TO HOME PAGE ---
+        // Redirects the user back to the root of the site (/)
+        return Response.redirect("https://bayoumountain.holdings/", 302);
 
     } catch (error) {
         console.error("Function Error:", error);
-        // If anything fails during parsing or D1 insertion, show an error.
-        return new Response(`Submission failed: ${error.message}`, { status: 500 });
+        // If anything fails during parsing or D1 insertion, redirect to the home page with an error status
+        return Response.redirect("https://bayoumountain.holdings/?status=error", 302);
     }
 }
