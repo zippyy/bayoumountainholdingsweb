@@ -40,7 +40,7 @@ The Bayou Sno Co. Experience: Our food truck is a vibrant celebration of that Lo
 
 ## Leadership and Vision
 
-**Nicholas Bennett, Founder & CEO**, and his wife, **Melissa Bennett, Co-Owner & Visionary**, established Bayou Mountain Holdings LLC with the vision of creating a company as diverse and rich as the American landscape itself.
+**Nicholas Bennett, Founder & CEO**, and his wife, **Melissa Bennett, Co-Owner & Visionary**, started Bayou Mountain Holdings LLC to turn their combined experience and passions into ventures that are both meaningful and distinctive.
 
 Combining Nicholas's deep professional background in Information Technology with Melissa's deep roots in Lafitte, Louisiana, they lead the company's two ventures. Nicholas guides the strategic growth and technical precision of Tech Relay, while Melissa ensures the authentic flavor and passion behind Bayou Sno Co. Together, they lead Bayou Mountain Holdings with a commitment to high standards, strategic growth, and community engagement. The success of the company is a testament to the idea that innovation can be both technical and deliciously refreshing.
 
