@@ -1,18 +1,2 @@
-# --- Final Attempt: Using the structure that allows the build to proceed ---
-
 name = "bayoumountain" 
 pages_build_output_dir = "public"
-
-# 1. MAIL BINDING: This is the format that causes a warning but is sometimes processed.
-[[bindings]]
-name = "MAIL_SERVICE"
-type = "email"
-value = "forms@bayoumountain.holdings"
-
-# 2. D1 BINDING: This format is required and works.
-[[d1_databases]]
-binding = "DB"
-database_name = "bmhforms"
-database_id = "cb9d6ef7-7545-4142-9c12-3802df59055d" 
-
-# --- End Final Attempt ---
